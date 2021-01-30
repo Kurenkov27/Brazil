@@ -12,52 +12,12 @@
 
 <body>
 
-<div class="top">
+  <app-header></app-header>
 
-<div class="regime">Режим работы 8:00 - 22:00. Без Выходных</div>
+  <span class="info">
+    <router-outlet></router-outlet>
+  </span>
 
-<nav>
-
-<ul class="main-menu">
-
-<li><a href="ссылка"><h1>Главная</h1></a></li>
-
-<li><a class="important" href="ссылка"><h1>Заказать Отдых</h1></a></li>
-
-<li><a href="ссылка"><h1>Контакты</h1></a></li>
-
-<li><a href="ссылка" class="about"><h1>О Бразилии</h1></a>
-
-<ul class="sub-menu">
-
- <li><a href="ссылка">Общее</a></li>
-
- <li><a href="ссылка">Достопримечательности</a></li>
-
- <li><a href="ссылка">Пляжи</a></li>
-
- <li><a href="ссылка">Мероприятия</a></li>
-
- <li><a href="ссылка">Отели/Хостелы/Апартаменты</a></li>
-
- <li><a href="ссылка">Еда</a></li>
-
-</ul>
-
-</li>
-
-<li><a href="ссылка"><h1>Отзывы</h1></a></li>  
-
-</ul>
-
-</nav>
-
-<span class="phone"> Тел. 093-656-34-34</span>
-
-</div>
-
-<span class="info">Text</span>
-
-<div id="footer">&copy; Владислав Мержевич</div>
+  <app-footer></app-footer> 
 
 </body>
