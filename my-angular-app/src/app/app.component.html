@@ -12,46 +12,12 @@
 
 <body>
 
-<div class="top">
+  <app-header></app-header>
 
-<div class="regime">Welcome to LoveBrazil</div>
+  <span class="info">
+    <router-outlet></router-outlet>
+  </span>
 
-<nav>
-
-<ul class="main-menu">
-
-<li><a href="ссылка"><h1>Brazil</h1></a></li>
-
-<li><a class="important" href="ссылка"><h1>Blog</h1></a></li>
-
-<li><a href="ссылка"><h1>Photos</h1></a></li>
-
-<li><a href="ссылка"><h1>Girls</h1></a></li>  
-
-<li><a href="ссылка" class="about"><h1>About Brazil</h1></a>
-
-<ul class="sub-menu">
-
- <li><a href="ссылка">History</a></li>
-
- <li><a href="ссылка">Places</a></li>
-
- <li><a href="ссылка">Beaches</a></li>
-
- <li><a href="ссылка">Food</a></li>
-
-</ul>
-
-</li>
-
-</ul>
-
-</nav>
-
-</div>
-
-<span class="info">Text</span>
-
-<div id="footer">&copy; Владислав Мержевич</div>
+  <app-footer></app-footer> 
 
 </body>
