@@ -1,56 +1,56 @@
 /* Цвет текста для заголовка*/
   
 h1{
-    color: #FFFFFF;  
+  color: #FFFFFF;  
 }
 
 /*Ссылки - блочно-строчные, ширина и высота автоматические, без подчеркивания, горизонтально - по центрцу, вертикально - по средине, цвет фона, радиус закругления и тень*/
 
 a{
-   padding: 5px 40px;
+ padding: 5px 40px;
 
-   display: inline-block;
+ display: inline-block;
 
-   width: auto;
+ width: auto;
 
-   height: auto;
+ height: auto;
 
-   text-decoration: none;
+ text-decoration: none;
 
-   text-align: center;
+ text-align: center;
 
-   vertical-align: middle;
+ vertical-align: middle;
 
-   background: #e67300;
+ background: #e67300;
 
- border-radius: 10px;
+border-radius: 10px;
 
- box-shadow: 1px 0px 11px -2px #000000;
+box-shadow: 1px 0px 11px -2px #000000;
 }
 
 /*Блок top - внутренние отступы 10px, внешний отступ слева -15рх, внешний отступ справа и сверху -8рх, цвет фона, высота и ширина автоматически, по центру*/
 
 .header {
 
- z-index:100;
+z-index:100;
 
- position:absolute;
+position:absolute;
 
- padding: 10px 10px;
+padding: 10px 10px;
 
- margin-left: -15px;
+margin-left: -15px;
 
- margin-right: -8px;
+margin-right: -8px;
 
- margin-top: -8px;
+margin-top: -8px;
 
- background-color: #ffcc66;
+background-color: #ffcc66;
 
- height: auto;
+height: auto;
 
- width: 100%;
+width: 100%;
 
- text-align: center;
+text-align: center;
 
 }
 
@@ -58,7 +58,7 @@ a{
 
 a:hover {
 
- background-color: #2ecc71;
+background-color: #2ecc71;
 
 }
 
@@ -66,7 +66,7 @@ a:hover {
 
 .important:hover {
 
-   background-color: #2ecc71 !important;
+ background-color: #2ecc71 !important;
 
 }
 
@@ -74,13 +74,13 @@ a:hover {
 
 a:active {
 
-   z-index: 2;
+ z-index: 2;
 
-   background-color:#4ce600;
+ background-color:#4ce600;
 
- position:relative;
+position:relative;
 
- top:1px;
+top:1px;
 
 }
 
@@ -88,7 +88,7 @@ a:active {
 
 .important:active {
 
-   background-color:#4ce600 !important;
+ background-color:#4ce600 !important;
 
 }
 
@@ -96,110 +96,110 @@ a:active {
 
 .regime, .phone{
 
- display: inline-block;
+display: inline-block;
 
- position: relative;
+position: relative;
 
- font-size: large;
+font-size: large;
 
- font-weight: bold;
+font-weight: bold;
 
- font-style: italic;
+font-style: italic;
 
- font-family: Comic Sans MS;
+font-family: Comic Sans MS;
 
 }
 
 /*Элементы списка - блочно-строчные, относительное позиционирование, отступы по горизонтали 0, по вертикали 3рх*/
-  
+
 li {
-  
-    display: inline-block;
-  
-    position: relative;
-  
-    margin: 0px 3px;
-  
-  }
-  
-  /*Не показывать вложенный список*/
-  
-  nav ul ul {
-  
-  display: none;
-  
-  }
 
-  /*При наведении на элемент списка, показывать вложенный список*/
-  
-  nav ul li:hover > ul{
-  
-    display: block;
-  
-  }
-  
-  /*Свойства списка: без пунктов/нумерации, позиция относительная, вид - строчная таблица*/
-  
-  nav ul{
-  
-    list-style: none;
-  
-    position: relative;
-  
-    display: inline-table;
-  
-  }
+  display: inline-block;
 
-  /*Размещение элементов списка - слева (при переносе строки)*/
-  
-  nav ul li{
-  
-    float: left;
-  
-  }
+  position: relative;
 
-  /*Для списка в списке, внутренние отступы 0, позиция абсолютная, */
-  
-  nav ul ul{
-  
-    padding: 0;
-  
-    position: absolute;
-  
-    top: 100%;
-  
-  }
+  margin: 0px 3px;
 
-  /*Для ссылок внутри второстепенного меню, цвет белый, минимальная ширина 190рх, минимальная высота 30рх, радиус закругления 5рх, внутренние отступы по вертикали 10рх и 0рх по горизонтали*/
-  
-  .sub-menu a{
-  
-    color: white;
-  
-    min-width: 190px;
-  
-    min-height: 30px;
-  
-    border-radius: 5px;
-  
-    padding: 10px 0px;
-  
-  }
+}
 
-  /*Для элементов основного и вложенного меню, ширина 150рх, на передний фон*/
-  
-  .main-menu .sub-menu {
-  
-    width: 150px;
-  
-    z-index: 1000
-  
-  }
+/*Не показывать вложенный список*/
 
-  /*Рамки для ссылок вложенного меню*/
-  
-  .sub-menu a {
-  
-  border: 1px solid #E5E5E5;
-  
-  }
+nav ul ul {
+
+display: none;
+
+}
+
+/*При наведении на элемент списка, показывать вложенный список*/
+
+nav ul li:hover > ul{
+
+  display: block;
+
+}
+
+/*Свойства списка: без пунктов/нумерации, позиция относительная, вид - строчная таблица*/
+
+nav ul{
+
+  list-style: none;
+
+  position: relative;
+
+  display: inline-table;
+
+}
+
+/*Размещение элементов списка - слева (при переносе строки)*/
+
+nav ul li{
+
+  float: left;
+
+}
+
+/*Для списка в списке, внутренние отступы 0, позиция абсолютная, */
+
+nav ul ul{
+
+  padding: 0;
+
+  position: absolute;
+
+  top: 100%;
+
+}
+
+/*Для ссылок внутри второстепенного меню, цвет белый, минимальная ширина 190рх, минимальная высота 30рх, радиус закругления 5рх, внутренние отступы по вертикали 10рх и 0рх по горизонтали*/
+
+.sub-menu a{
+
+  color: white;
+
+  min-width: 190px;
+
+  min-height: 30px;
+
+  border-radius: 5px;
+
+  padding: 10px 0px;
+
+}
+
+/*Для элементов основного и вложенного меню, ширина 150рх, на передний фон*/
+
+.main-menu .sub-menu {
+
+  width: 150px;
+
+  z-index: 1000
+
+}
+
+/*Рамки для ссылок вложенного меню*/
+
+.sub-menu a {
+
+border: 1px solid #E5E5E5;
+
+}

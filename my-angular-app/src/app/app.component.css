@@ -1,27 +1,81 @@
 /*Блок текста, блочно-строчный элемент, относительная позиция, отступ слева на 27%, сверху на 20%, высота 65%, ширина 50%, цвет фона - оранжевый, прозрачность 0.8, внутринние отступы в 10рх, перенос текста, радиус 25 px скругление углов*/
   
 .info{
-  
+
     display: inline-block;
     
     position: absolute;
     
-    left: 25%;
+    left: 20%;
     
     top: 23%;
     
-    height: 66%;
+    height: 61%;
     
-    width: 50%;
+    width: 60%;
     
     background-color:orange;
     
-    opacity: 0.8;
+    opacity: 0.85;
     
-    padding: 10px;
+    padding: 15px;
+
+    padding-bottom: 4%;
     
     word-wrap: break-word;
   
-    border-radius: 25px;
+    border-radius: 15px;
+
+    font-size: 1.5em;
+
+    -webkit-box-shadow: 0 10px 6px -6px #777;
     
+    -moz-box-shadow: 0 10px 6px -6px #777;
+
+    box-shadow: 0 10px 6px -6px #777;
+
+  }
+
+  .inner{
+
+    margin: 10px;
+  
+    width: 92%;
+  
+    height: 90%;
+  
+    display: inline-block;
+      
+    background-color:#ffcc66;
+      
+    opacity: 0.85;
+      
+    padding: 15px;  
+    
+    border-radius: 15px;
+
+    overflow-y: auto;
+  
+  }
+
+    /* width */
+::-webkit-scrollbar {
+    width: 30px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 25px grey; 
+    border-radius: 15px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: LightBlue; 
+    border-radius: 15px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #87CEFA; 
   }
