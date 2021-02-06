@@ -10,10 +10,11 @@ import { BlogComponent } from './blog/blog.component';
 import { PhotosComponent } from './photos/photos.component';
 import { GirlsComponent } from './girls/girls.component';
 import { AboutComponent } from './about/about.component';
-import { HistoryComponent } from './history/history.component';
-import { PlacesComponent } from './places/places.component';
-import { BeachesComponent } from './beaches/beaches.component';
-import { FoodComponent } from './food/food.component';
+import { HistoryComponent } from './about/history/history.component';
+import { PlacesComponent } from './about/places/places.component';
+import { BeachesComponent } from './about/beaches/beaches.component';
+import { FoodComponent } from './about/food/food.component';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FoodComponent } from './food/food.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

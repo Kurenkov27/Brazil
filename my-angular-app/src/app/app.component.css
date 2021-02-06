@@ -8,7 +8,7 @@
     
     left: 20%;
     
-    top: 23%;
+    top: 20%;
     
     height: 61%;
     
@@ -20,7 +20,7 @@
     
     padding: 15px;
 
-    padding-bottom: 4%;
+    padding-bottom: 0%;
     
     word-wrap: break-word;
   
@@ -38,11 +38,13 @@
 
   .inner{
 
-    margin: 10px;
-  
-    width: 92%;
+    margin: 0px;
+
+    width: 96%;
   
     height: 90%;
+
+    margin-top: 2px;
   
     display: inline-block;
       
