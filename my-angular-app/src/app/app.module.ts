@@ -1,20 +1,32 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { FormsModule } from '@angular/forms';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatExpansionModule} from '@angular/material/expansion'
+
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './page/header/header.component';
+import { FooterComponent } from './page/footer/footer.component';
 import { HomeComponent } from './home/home.component';
-import { BlogComponent } from './blog/blog.component';
-import { PhotosComponent } from './photos/photos.component';
-import { GirlsComponent } from './girls/girls.component';
+import { BlogComponent } from './page/blog/blog.component';
+import { PhotosComponent } from './page/photos/photos.component';
+import { GirlsComponent } from './page/girls/girls.component';
 import { AboutComponent } from './about/about.component';
 import { HistoryComponent } from './about/history/history.component';
 import { PlacesComponent } from './about/places/places.component';
 import { BeachesComponent } from './about/beaches/beaches.component';
 import { FoodComponent } from './about/food/food.component';
-import {NgxPaginationModule} from 'ngx-pagination';
+import { PostCreateComponent } from './posts/post-create/post-create.component';
+import { PostListComponent } from './posts/post-list/post-list.component';
+import { PostsService } from './posts/posts.service';
+import { HttpClientModule } from "@angular/common/http"
 
 @NgModule({
   declarations: [
@@ -29,12 +41,23 @@ import {NgxPaginationModule} from 'ngx-pagination';
     HistoryComponent,
     PlacesComponent,
     BeachesComponent,
-    FoodComponent
+    FoodComponent,
+    PostCreateComponent,
+    PostListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    FormsModule,
+    NoopAnimationsModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatCardModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatExpansionModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

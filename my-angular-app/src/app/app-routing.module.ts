@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { BeachesComponent } from './about/beaches/beaches.component';
-import { BlogComponent } from './blog/blog.component';
+import { BlogComponent } from './page/blog/blog.component';
 import { FoodComponent } from './about/food/food.component';
-import { GirlsComponent } from './girls/girls.component';
+import { GirlsComponent } from './page/girls/girls.component';
 import { HistoryComponent } from './about/history/history.component';
 import { HomeComponent } from './home/home.component';
-import { PhotosComponent } from './photos/photos.component';
+import { PhotosComponent } from './page/photos/photos.component';
 import { PlacesComponent } from './about/places/places.component';
 
 const routes: Routes = [
