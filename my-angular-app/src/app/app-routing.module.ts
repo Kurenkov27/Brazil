@@ -9,6 +9,7 @@ import { HistoryComponent } from './about/history/history.component';
 import { HomeComponent } from './home/home.component';
 import { PhotosComponent } from './page/photos/photos.component';
 import { PlacesComponent } from './about/places/places.component';
+import { PostCreateComponent } from './posts/post-create/post-create.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,14 @@ const routes: Routes = [
   {
     path: "blog",
     component: BlogComponent
+  },
+  {
+    path: "blog/create",
+    component: PostCreateComponent
+  },
+  {
+    path: "blog/edit/:postId",
+    component: PostCreateComponent
   },
   {
     path: "photos",

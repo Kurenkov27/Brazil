@@ -1,10 +1,13 @@
+<a mat-button routerLink="/blog" class="back">Back</a>
+<br/>
+<p></p>
 <mat-card>
-<form (submit)="onAddPost(postForm)" #postForm="ngForm">
+<form (submit)="onSavePost(postForm)" #postForm="ngForm">
   <mat-form-field>
     <input matInput type="text"
      placeholder="Title"
       name="title"
-      ngModel
+      [ngModel]="post?.title"
       required
       minlength="3"
       #title="ngModel">
@@ -17,7 +20,7 @@
     rows="6"
     placeholder="Post"
     name ="content"
-    ngModel
+    [ngModel]="post?.content"
     required
     #content="ngModel">
     </textarea>

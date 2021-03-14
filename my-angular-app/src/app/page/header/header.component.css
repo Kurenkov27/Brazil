@@ -1,7 +1,7 @@
 /* Цвет текста для заголовка*/
-  
+
 h1{
-  color: #FFFFFF;  
+  color: #FFFFFF;
 }
 
 /*Ссылки - блочно-строчные, ширина и высота автоматические, без подчеркивания, горизонтально - по центрцу, вертикально - по средине, цвет фона, радиус закругления и тень*/
@@ -60,35 +60,21 @@ background-color: #2ecc71;
 
 }
 
-/*Изменение цвета, при наведении на выделенный блок*/
-
-.important:hover {
-
- background-color: #2ecc71 !important;
-
-}
 
 /*При нажатии на блок, цвет фона, позиция и смещение позиции (для эффекта вдавливания)*/
 
 a:active {
 
- z-index: 2;
+  z-index: 2;
 
- background-color:#4ce600;
+  background-color:#4ce600;
 
-position:relative;
+  position:relative;
 
-top:1px;
-
-}
-
-/*Изменение цвета фона, при нажатии на блок с анимацией*/
-
-.important:active {
-
- background-color:#4ce600 !important;
+  top:1px;
 
 }
+
 
 /*Блок с телефоном и режимом работы, блочно-строчный элемент, относительная позиция, размер большой, шрифт жирный, стиль наклонный, вид Comic Sans MS*/
 
@@ -200,4 +186,8 @@ nav ul ul{
 
 border: 1px solid #E5E5E5;
 
+}
+
+.active_class{
+  background-color:#2ecc71 ;
 }
