@@ -1,55 +1,42 @@
-/* Цвет текста для заголовка*/
-
-h1{
-  color: #FFFFFF;
-}
-
 /*Ссылки - блочно-строчные, ширина и высота автоматические, без подчеркивания, горизонтально - по центрцу, вертикально - по средине, цвет фона, радиус закругления и тень*/
 
 a{
- padding: 5px 40px;
+  color: #FFFFFF;
 
- display: inline-block;
+  padding: 20px 40px;
 
- width: auto;
+  display: inline-block;
 
- height: auto;
+  width: auto;
 
- text-decoration: none;
+  height: auto;
 
- text-align: center;
+  text-decoration: none;
 
- vertical-align: middle;
+  text-align: center;
 
- background: #e67300;
+  vertical-align: middle;
 
-border-radius: 10px;
+  background: #e67300;
 
-box-shadow: 1px 0px 11px -2px #000000;
+  border-radius: 10px;
+
+  box-shadow: 1px 0px 11px -2px #000000;
+
+  font-family: "Times New Roman", Times, sans-serif;
+
+  font-weight: bold;
+
+  font-size: 1.5em;
 }
 
 /*Блок top - внутренние отступы 10px, внешний отступ слева -15рх, внешний отступ справа и сверху -8рх, цвет фона, высота и ширина автоматически, по центру*/
 
-.header {
-
-z-index:100;
-
-position:absolute;
-
-padding: auto;
-
-margin-left: -16px;
-
-margin-top: -8px;
-
-background-color: #ffcc66;
-
-height: auto;
-
-width: 100%;
-
-text-align: center;
-
+.header{
+  background-color: #ffcc66;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 /*Изменение фона ссылки, при наведении*/
@@ -75,24 +62,6 @@ a:active {
 
 }
 
-
-/*Блок с телефоном и режимом работы, блочно-строчный элемент, относительная позиция, размер большой, шрифт жирный, стиль наклонный, вид Comic Sans MS*/
-
-.regime, .phone{
-
-display: inline-block;
-
-position: relative;
-
-font-size: large;
-
-font-weight: bold;
-
-font-style: italic;
-
-font-family: Comic Sans MS;
-
-}
 
 /*Элементы списка - блочно-строчные, относительное позиционирование, отступы по горизонтали 0, по вертикали 3рх*/
 
@@ -168,13 +137,15 @@ nav ul ul{
 
   padding: 10px 0px;
 
+  font-size: 1.5em;
+
 }
 
 /*Для элементов основного и вложенного меню, ширина 150рх, на передний фон*/
 
 .main-menu .sub-menu {
 
-  width: 150px;
+  width: auto;
 
   z-index: 1000
 
@@ -185,6 +156,7 @@ nav ul ul{
 .sub-menu a {
 
 border: 1px solid #E5E5E5;
+font-size: 1.2em;
 
 }
 

@@ -7,3 +7,12 @@ textarea{
 .back{
   background-color:#87CEFA;
 }
+
+mat-spinner {
+  margin: auto;
+}
+
+a:hover{
+  text-decoration: none;
+  outline : none;
+}

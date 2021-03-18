@@ -2,3 +2,12 @@
   float: right;
   background-color:#87CEFA;
 }
+
+a:hover{
+  text-decoration: none;
+  outline : none;
+}
+
+.breaker{
+  padding-bottom: 1rem;
+}
